@@ -24,7 +24,7 @@ async def on_ready():
 
 async def load_cogs():
     async with bot:
-        cog_modules = ['cogs.ping', 'cogs.avatar', 'cogs.report', 'cogs.help', 'cogs.serverinfo']
+        cog_modules = ['cogs.ping', 'cogs.avatar', 'cogs.report', 'cogs.help', 'cogs.info']
         for cog in cog_modules:
             await bot.load_extension(cog)
          await bot.start(TOKEN)
