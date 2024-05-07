@@ -6,7 +6,7 @@ class info(commands.Cog):
         self.bot = bot
         
     @commands.hybrid_command(name="info", description="Gives you information about the minecraft server.")
-    async def ping(self, interaction: discord.Interaction):
+    async def info(self, interaction: discord.Interaction):
         description = f"Support: https://support.hypixel.net\nMinecraft Server IP: **mc.hypixel.net**\nWebsite: https://hypixel.net/\nServer Invite Link: https://discord.gg/hypixel\n\n**Store**: https://store.hypixel.net/"
         embed = discord.Embed(title="Useful Links", description=description, color=discord.Color.from_rgb(43, 45, 49))
         await interaction.send(embed=embed)
